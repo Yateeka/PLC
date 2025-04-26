@@ -1,3 +1,74 @@
+"""
+=======================================================================
+Python Syntax Highlighting Editor
+Author: Yateeka Goyal
+Institution: Georgia State University
+Email: ygoyal2@student.gsu.edu
+Repository: https://github.com/Yateeka/PLC
+=======================================================================
+
+Description:
+------------
+This project implements a standalone syntax highlighting text editor 
+using Python's built-in Tkinter library. It is designed to provide 
+a lightweight, accessible, and educational alternative to full IDEs, 
+focused primarily on Python code development and learning.
+
+Key Features:
+-------------
+- Real-time syntax highlighting for Python keywords, strings, numbers,
+  booleans, collections, operators, and comments using regular expressions.
+- Dynamic line numbering synchronized with the text editor’s scrolling.
+- Bracket matching functionality that automatically inserts closing brackets.
+- Autocomplete suggestions for Python keywords through a floating window.
+- Multiple professionally designed themes (Light, Dark, Monokai, Solarized, 
+  Dracula, Nord) with dynamic theme switching support.
+- Real-time status bar displaying the current cursor position (line, column).
+- File operations: Open existing files, save current files in Python (.py) 
+  or text formats.
+- Built-in keyboard shortcuts for improved user productivity.
+- A sample code snippet is preloaded to demonstrate the editor's capabilities.
+
+System Design Overview:
+------------------------
+- TextEditor Class: Manages the main application window and orchestrates all 
+  components including text widget, status bar, line numbers, menus, and themes.
+- ScrolledText Widget: The primary text editing area with scroll support.
+- LineNumberCanvas: A specialized Text widget displaying dynamic line numbers.
+- Syntax Highlighter: Applies regex-based syntax coloring based on Python syntax.
+- Autocomplete Module: Handles real-time keyword prediction and insertion.
+- Theme Manager: Applies color schemes dynamically to match user preferences.
+- Status Bar: Updates cursor location live based on user actions.
+- Event Handlers: Manage real-time user inputs, including typing, file I/O, 
+  theming, and bracket matching.
+
+Educational Value:
+-------------------
+This project demonstrates practical applications of:
+- GUI programming using Tkinter
+- Regular expressions for lexical analysis
+- Event-driven architecture
+- Object-oriented design principles
+- Dynamic user interface management
+- Building real-time, interactive Python applications from scratch
+
+Usage Instructions:
+--------------------
+1. Run the script using a Python 3.x environment.
+2. Type or paste Python code into the text editor.
+3. Open or save files via the File menu or keyboard shortcuts.
+4. Switch themes from the Themes menu or using Ctrl+T.
+5. View autocomplete suggestions as you type Python keywords.
+6. Observe real-time syntax highlighting, bracket matching, and status updates.
+
+License:
+---------
+This project is released under an open educational license for learning 
+and demonstration purposes. Proper attribution to the author is appreciated.
+
+=======================================================================
+"""
+
 import tkinter as tk
 from tkinter import scrolledtext, filedialog, messagebox, Toplevel, Listbox
 import keyword
