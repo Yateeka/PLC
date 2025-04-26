@@ -1,9 +1,12 @@
 # Python Syntax Highlighting Editor
 
 This project is a standalone text editor developed using Python's Tkinter GUI library. It supports real-time syntax highlighting, multiple themes, Python keyword autocomplete, bracket matching, and dynamic line numbers. The editor is designed to provide an interactive coding experience similar to lightweight IDEs, focusing specifically on Python code.
-You can also access the presentation at: \href{https://github.com/Yateeka/PLC/blob/main/Syntax%20Highlighting%20Editor.pdf}{Project Presentation}.
 
-The final project report is available at: \href{https://github.com/Yateeka/PLC/blob/main/Programming_Language_concepts%20(1).pdf}{Final Report}.
+You can also access the presentation here: [Project Presentation](https://github.com/Yateeka/PLC/blob/main/Syntax%20Highlighting%20Editor.pdf).
+
+The final project report is available here: [Final Report](https://github.com/Yateeka/PLC/blob/main/Programming_Language_concepts%20(1).pdf).
+
+
 
 ## Features
 
